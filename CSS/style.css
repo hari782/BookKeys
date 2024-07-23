@@ -1,0 +1,63 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    padding: 10px;
+}
+.card-title {
+    color: #fd6569;
+}
+.btn-danger {
+    background-color: #fd6569;
+    border: none;
+}
+.addbutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    padding: 20px;
+}
+.overlay {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.popupcard {
+    background-color: #fd6569;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    position: absolute;
+    display: none;
+}
+.popup input,
+.popup textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+.popup input::placeholder,
+.popup textarea::placeholder {
+    color: black;
+}
+.popup button {
+    margin: 5px;
+}
+.popup input:focus,
+.popup textarea:focus {
+    outline: none;
+}

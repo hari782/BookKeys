@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyNotes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/boot.min.css">
+    <script src="boot.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand text-white" href="#">KeyNotes</a>
+    </nav>
+    <div class="container mt-4">
+        <div class="row" id="book-list">
+            <div class="col-md-4">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rich and Poor</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Richard Johnson</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem doloribus dignissimos quibusdam, numquam quam ut amet reiciendis quasi facilis blanditiis. Voluptatum repellat rerum doloribus aperiam repudiandae ea cumque voluptate libero.</p>
+                        <button class="btn btn-danger" onclick="delet(event)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="popupcard">
+        <div class="card-body">
+            <h2 class="card-title">Add Book</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Book Title" id="booktitle">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Book Author" id="bookauthor">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Short Description" id="bookdescription"></textarea>
+                </div>
+                <button class="btn btn-dark" id="add">ADD</button>
+                <button class="btn btn-secondary" id="cancel">CANCEL</button>
+            </form>
+        </div>
+    </div>
+    <button class="addbutton btn btn-danger rounded-circle" id="btn" onclick="show()">+</button>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
